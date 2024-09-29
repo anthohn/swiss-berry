@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   description: "Chez Swiss Berry, nous sublimons votre présence en ligne avec des solutions web sur mesure, une optimisation SEO avancée, et une maintenance continue. Transformez votre site en une machine à conversions grâce à notre expertise et à des technologies de pointe telles que Next.js.",
   keywords: ["Swiss Berry", "développement web", "SEO", "maintenance site", "Next.js", "sites web performants", "design sur mesure", "conversion clients"],
   authors: [{ name: "Swiss Berry", url: "https://swiss-berry.com" }],
-  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
     url: "https://swiss-berry.com",
