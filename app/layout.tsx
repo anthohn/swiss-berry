@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from '@/app/components/Header'
+import Header from '@/app/components/Header';
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -11,11 +11,31 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Swiss Berry",
+    default: "Swiss Berry - Développement web sur mesure",
     template: "%s - Swiss Berry"
-
   },
-  description: "",
+  description: "Chez Swiss Berry, nous sublimons votre présence en ligne avec des solutions web sur mesure, une optimisation SEO avancée, et une maintenance continue. Transformez votre site en une machine à conversions grâce à notre expertise et à des technologies de pointe telles que Next.js.",
+  keywords: ["Swiss Berry", "développement web", "SEO", "maintenance site", "Next.js", "sites web performants", "design sur mesure", "conversion clients"],
+  authors: [{ name: "Swiss Berry", url: "https://swiss-berry.com" }],
+  viewport: "width=device-width, initial-scale=1.0",
+  openGraph: {
+    type: "website",
+    url: "https://swiss-berry.com",
+    title: "Swiss Berry - Développement web et SEO",
+    description: "Sublimez votre présence en ligne avec des sites performants conçus sur mesure pour attirer et convertir.",
+    images: [
+      {
+        url: "/svg/logo-text-blanc.svg",
+        alt: "Swiss Berry Logo",
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Swiss Berry - Développement web sur mesure",
+    description: "Expertise en développement web, optimisation SEO et maintenance continue pour booster votre activité en ligne.",
+    images: ["/svg/logo-text-blanc.svg"],
+  },
 };
 
 export default function RootLayout({
@@ -27,8 +47,8 @@ export default function RootLayout({
     <html lang="fr" className={inter.className}>
       <body className="flex flex-col">
         <Header />
-          {children}
-          <Toaster position="top-right" />
+        {children}
+        <Toaster position="top-right" />
       </body>
     </html>
   );
