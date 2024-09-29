@@ -1,6 +1,8 @@
 import Boost from "./components/Boost";
 import Landing from "./components/Landing";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
+
 
 
 export default function Home() {
@@ -10,6 +12,7 @@ export default function Home() {
       <Landing />
       <Services />
       <Boost />
+      <Projects />
     </>
   );
 }
