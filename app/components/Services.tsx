@@ -6,14 +6,13 @@ import SEO from '@/public/svg/SEO.svg'
 export default function Services() {
     return(
         <>
-            <section className="pt-40 ">
-                <h1 className="text-6xl font-medium leading-tight text-center">Nos services</h1>
-                <div className="w-9/12 flex flex-wrap mx-auto pt-20">
+            <section className="pt-40 w-9/12 mx-auto">
+                <h2 className="text-6xl font-medium leading-tight text-center">Nos services</h2>
+                <div className="flex flex-wrap pt-20">
                     <div className="w-5/12">
                         <div className='flex flex-col items-center space-y-[20rem] w-10/12 mx-auto'>
-
                             <div className="relative">
-                            <div className='absolute inset-0 blur-[8rem] bg-[#61658F]'></div>
+                            <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div>
                             <Image
                                 src={WebPerso}
                                 alt=""
@@ -22,10 +21,10 @@ export default function Services() {
                             </div>
                             <div className="flex flex-col space-y-4 ">
                                 <h3 className='font-semibold text-3xl'>Optimisation SEO avancée</h3>
-                                <p className='text-[18px] text-justify leading-6 text-neutral-400'>Ne laissez pas votre site se perdre dans le web ! Grâce à Next.js, nous propulsons votre visibilité et attirons un trafic qualifié, maximisant ainsi votre potentiel commercial.</p>
+                                <p className='text-[18px] text-justify leading-6 text-neutral-300'>Ne laissez pas votre site se perdre dans le web ! Grâce à Next.js, nous propulsons votre visibilité et attirons un trafic qualifié, maximisant ainsi votre potentiel commercial.</p>
                             </div>
                             <div className="relative">
-                                <div className='absolute inset-0 blur-[8rem] bg-[#61658F]'></div>
+                                <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div>
                                 <Image
                                     src={SEO}
                                     alt=""
@@ -45,10 +44,10 @@ export default function Services() {
                         <div className='flex flex-col items-center space-y-[20rem] space w-10/12 mx-auto mt-32'>  
                             <div className="flex flex-col space-y-4">
                             <h3 className='font-semibold text-3xl'>Développement web personnalisé</h3>
-                            <p className='text-[18px] text-justify leading-6 text-neutral-400'>Transformez votre vision en réalité avec des sites web sur mesure qui captivent et convertissent. Chaque projet est conçu pour offrir une expérience utilisateur exceptionnelle sur tous les appareils.</p>
+                            <p className='text-[18px] text-justify leading-6 text-neutral-300'>Transformez votre vision en réalité avec des sites web sur mesure qui captivent et convertissent. Chaque projet est conçu pour offrir une expérience utilisateur exceptionnelle sur tous les appareils.</p>
                         </div>
                         <div className="relative">
-                            <div className='absolute inset-0 blur-[8rem] bg-[#61658F]'></div>
+                            <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div>
                             <Image
                                 src={SEO}
                                 alt=""
@@ -57,7 +56,7 @@ export default function Services() {
                         </div>
                         <div className="flex flex-col space-y-4">
                             <h3 className='font-semibold text-3xl'>Maintenance continue</h3>
-                            <p className='text-[18px] text-justify leading-6 text-neutral-400'>Assurez la pérennité de votre site avec notre maintenance proactive. Mises à jour régulières, sauvegardes et surveillance 24/7 garantissent que votre site reste performant. Concentrez-vous sur votre activité, nous nous occupons du reste !</p>
+                            <p className='text-[18px] text-justify leading-6 text-neutral-300'>Assurez la pérennité de votre site avec notre maintenance proactive. Mises à jour régulières, sauvegardes et surveillance 24/7 garantissent que votre site reste performant. Concentrez-vous sur votre activité, nous nous occupons du reste !</p>
                         </div>
                         </div>
                     </div>
