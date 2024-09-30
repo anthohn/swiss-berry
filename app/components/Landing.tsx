@@ -11,8 +11,8 @@ export default function Landing() {
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
                     transition={{
-                      delay: 0.3,
-                      duration: 0.2,
+                      delay: 0.9,
+                      duration: 0.8,
                       ease: "easeInOut",
                     }}            
                     className="text-4xl md:text-5xl xl:text-6xl font-medium leading-tight">
@@ -22,8 +22,8 @@ export default function Landing() {
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
                     transition={{
-                      delay: 0.6,
-                      duration: 0.2,
+                      delay: 1.2,
+                      duration: 0.8,
                       ease: "easeInOut",
                     }}    
                     className="flex flex-col space-y-4 md:flex-row md:space-y-0 justify-center mx-auto md:space-x-6 text-xl items-start"> 
@@ -35,8 +35,8 @@ export default function Landing() {
                         initial={{ opacity: 0}}
                         whileInView={{ opacity: 1}}
                         transition={{
-                          delay: 0.9,
-                          duration: 0.2,
+                          delay: 1.5,
+                          duration: 0.8,
                           ease: "easeInOut",
                         }}  
                         href='/contact' 
