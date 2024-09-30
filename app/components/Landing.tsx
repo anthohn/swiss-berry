@@ -4,7 +4,7 @@ import CheckItem from './CheckItem';
 export default function Landing() {
     return(
         <>
-            <section className="w-8/12 flex flex-col space-y-20 mx-auto text-center pt-40">
+            <section className="w-8/12 flex flex-col space-y-20 mx-auto text-center pt-28">
                 <h1 className="text-6xl font-medium leading-tight	">Votre présence en ligne,<br/> sublimée par notre expertise.</h1>
                 <ul className="flex flex-wrap justify-center space-x-10 text-xl"> 
                     <CheckItem>Solution sur mesure</CheckItem>
