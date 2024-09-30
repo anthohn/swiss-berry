@@ -37,7 +37,9 @@ export default function Header() {
                 className={`w-full p-6 z-50 fixed top-0 transition-all duration-300 ${scrolled ? 'bg-[#161838] bg-opacity-90' : 'bg-transparent'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.2 }}
+                transition={{ 
+                    delay: 0.6,
+                    duration: 1 }}
             >
                 <div className="mx-auto w-11/12 flex items-center justify-between">
                     {/* Logo */}
