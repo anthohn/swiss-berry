@@ -28,8 +28,8 @@ export default function Boost() {
                           duration: 0.8,
                           ease: "easeInOut",
                         }}
-                        className="relative bg-[#D9D9D9] bg-opacity-5 rounded-3xl border">
-                            <h3 className="absolute text-3xl font-semibold w-full text-center border-b bg-[#D9D9D9] bg-opacity-5 py-4 rounded-3xl">Site web classique</h3>
+                        className="relative bg-[#D9D9D9] bg-opacity-5 rounded-3xl border border-neutral-400">
+                            <h3 className="absolute text-3xl font-semibold w-full text-center border-b border-neutral-400 bg-[#D9D9D9] bg-opacity-5 py-4 rounded-3xl">Site web classique</h3>
                             <ul className='pt-24 space-y-4 p-6'>
                                 <BoostUncheckItem>Ne génère pas ou peu de demandes clients, car il n&apos;est pas optimisé pour la conversion.</BoostUncheckItem>
                                 <BoostUncheckItem>Manque de compétitivité, car il ne se distingue pas des autres.</BoostUncheckItem>
@@ -47,9 +47,9 @@ export default function Boost() {
                           duration: 0.8,
                           ease: "easeInOut",
                         }}className="sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mx-4 sm:mx-10">
-                        <div className="bg-[#D9D9D9] relative bg-opacity-5 rounded-3xl border">
+                        <div className="bg-[#D9D9D9] relative bg-opacity-5 rounded-3xl border border-neutral-400">
                         <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div>
-                            <h3 className="absolute text-3xl font-semibold w-full text-center border-b bg-[#D9D9D9] bg-opacity-40 py-4 rounded-3xl">Site performant</h3>
+                            <h3 className="absolute text-3xl font-semibold w-full text-center border-b border-neutral-400 bg-[#D9D9D9] bg-opacity-40 py-4 rounded-3xl">Site performant</h3>
                             <ul className='pt-24 space-y-4 p-6'>
                                 <CheckItemBoost>Séduit et impressionne les visiteurs dès la première seconde avec un design haut de gamme.</CheckItemBoost>
                                 <CheckItemBoost>Met clairement en avant la valeur ajoutée des services de l&apos;entreprise avec des textes accrocheurs.</CheckItemBoost>

@@ -24,7 +24,7 @@ export default function ContactForm() {
 
     return (
         <>
-            <form className="relative flex flex-col space-y-6 w-full p-8 text-[16px] rounded-3xl border bg-[#D9D9D9] bg-opacity-20 text-neutral-400"
+            <form className="relative flex flex-col gap-6 w-full p-8 text-[16px] rounded-3xl border border-neutral-400 bg-[#D9D9D9] bg-opacity-20 text-neutral-400"
                 onSubmit={async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.currentTarget);
@@ -38,9 +38,10 @@ export default function ContactForm() {
                     await handleSubmit(formData);
                 }}
             >
+                <div className='absolute inset-0 blur-[10rem] bg-[#3B4297] bg-opacity-50 -z-10'></div> 
                 <div className="flex flex-row justify-between space-x-4">
                     <input
-                        className="px-4 h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
+                        className="px-4 h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
                         name="senderFirstName"
                         type="text"
                         maxLength={500}
@@ -48,7 +49,7 @@ export default function ContactForm() {
                         autoComplete="off"
                     />
                     <input
-                        className="px-4 h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
+                        className="px-4 h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
                         name="senderLastName"
                         type="text"
                         maxLength={500}
@@ -57,7 +58,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <input
-                    className="h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                    className="h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
                     name="senderEmail"
                     type="email"
                     maxLength={500}
@@ -65,7 +66,7 @@ export default function ContactForm() {
                     autoComplete="off"
                 />
                 <input
-                    className="h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                    className="h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
                     name="senderNumberPhone"
                     type="tel" // Correction de type pour le numéro de téléphone
                     maxLength={500}
@@ -73,7 +74,7 @@ export default function ContactForm() {
                     autoComplete="off"
                 />
                 <input
-                    className="h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                    className="h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
                     name="senderWebSite"
                     type="text"
                     maxLength={500}
@@ -81,7 +82,7 @@ export default function ContactForm() {
                     autoComplete="off"
                 />
                 <input
-                    className="h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                    className="h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
                     name="senderComplInfo"
                     type="text"
                     maxLength={500}
