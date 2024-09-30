@@ -10,6 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://swiss-berry.com'), // Ajoute cette ligne
   title: {
     default: "Swiss Berry - Développement web sur mesure",
     template: "%s - Swiss Berry"
