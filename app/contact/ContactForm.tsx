@@ -38,9 +38,9 @@ export default function ContactForm() {
                     await handleSubmit(formData);
                 }}
             >
-                <div className="flex flex-wrap justify-between space-x-3">
+                <div className="flex flex-row justify-between space-x-4">
                     <input
-                        className="flex-grow h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                        className="px-4 h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
                         name="senderFirstName"
                         type="text"
                         maxLength={500}
@@ -48,7 +48,7 @@ export default function ContactForm() {
                         autoComplete="off"
                     />
                     <input
-                        className="flex-grow h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none px-4 rounded-xl"
+                        className="px-4 h-12 border bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
                         name="senderLastName"
                         type="text"
                         maxLength={500}
