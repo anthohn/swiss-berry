@@ -1,9 +1,18 @@
 'use client'
 import ContactForm from "@/app/contact/ContactForm";
+import { motion } from "framer-motion";
 
 export default function Contact() {
     return (
-            <div className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row space-x-0 lg:space-x-16 w-full md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12 mx-auto my-16 lg:my-48">
+            <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+                delay: 0,
+                duration: 1.5,
+                ease: "easeInOut",
+            }}
+            className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row space-x-0 lg:space-x-16 w-full md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12 mx-auto my-64">
                 <div className="w-full lg:w-1/2 flex flex-col space-y-20  p-4 lg:p-0">
                     <div className="flex flex-wrap justify-center">
                         <p className='hidden bg-gradient-to-b from-[#3B4297] to-[#131531] w-14 h-14 rounded-full sm:flex items-center justify-center z-10 text-3xl'>1</p>
@@ -24,6 +33,6 @@ export default function Contact() {
                 <div className="w-full lg:w-1/2 p-4 lg:p-0">
                     <ContactForm />
                 </div>
-            </div>
+            </motion.div>
     );
 }
