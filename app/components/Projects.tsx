@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Projects() {
     return (
         <>
-            <section className="pt-40 w-full md:w-11/12 xl:w-10/12 2xl:w-9/12 mx-auto">
+            <section className="py-64 w-full md:w-11/12 xl:w-10/12 2xl:w-9/12 mx-auto">
                 <motion.h2 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
@@ -25,7 +25,7 @@ export default function Projects() {
                     duration: 0.8,
                     ease: "easeInOut"
                     }}
-                    className="flex flex-col space-y-16 xl:space-y-0 xl:flex-row pt-28 items-center">
+                    className="flex flex-col space-y-16 xl:space-y-0 xl:flex-row pt-28 items-center xl:justify-center">
                     {projects.map((project, index) => (
                         <ProjectItem 
                             key={index}

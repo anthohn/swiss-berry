@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from '@/app/components/Header';
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import ContactBtn from "./components/ContactBtn";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Toaster position="top-right" />
+        <ContactBtn/>
       </body>
     </html>
   );
