@@ -16,7 +16,7 @@ export default function ContactBtn() {
       {/* Ajout du positionnement et d'un z-index */}
       <div className='absolute inset-0 blur-[1rem] z-[-1]  bg-[#3B4297]'></div>
       <div className="flex flex-col items-center">
-        <Image src={Mail} width={35} height={35} alt="logo Swiss Berry" />
+        <Image src={Mail} width={35} height={35} alt="Mail Icon" />
         <p className="font-semibold text-md z-10">Contact</p>
       </div>
     </motion.a>

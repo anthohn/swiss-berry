@@ -1,7 +1,6 @@
-import { MetadataRoute } from "next"
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-
     return [
         {
             url: 'https://swiss-berry.com',
@@ -9,10 +8,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: 'https://swiss-berry.com/contact',
+            url: 'https://swiss-berry.com/faq',
             lastModified: new Date(),
             priority: 0.9,
+        },
+        {
+            url: 'https://swiss-berry.com/contact',
+            lastModified: new Date(),
+            priority: 0.8,
         }
-    ]
-
+    ];
 }
