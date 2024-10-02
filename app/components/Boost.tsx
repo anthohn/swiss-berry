@@ -17,6 +17,7 @@ export default function Boost() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
+                viewport={{ once: true }}
                 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-center mx-10 lg:mx-0">Comment un site performant booste votre <br/> chiffre d&apos;affaires</motion.h2>
                 <div className="flex flex-col space-y-16 xl:space-y-0 xl:flex-row pt-44 items-center justify-center">
                     <div className="sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mx-4 sm:mx-10">
@@ -28,6 +29,7 @@ export default function Boost() {
                           duration: 0.8,
                           ease: "easeInOut",
                         }}
+                        viewport={{ once: true }}
                         className="relative bg-[#D9D9D9] bg-opacity-5 rounded-3xl border border-neutral-400">
                             <h3 className="absolute text-3xl font-semibold w-full text-center border-b border-neutral-400 bg-[#D9D9D9] bg-opacity-5 py-4 rounded-3xl">Site web classique</h3>
                             <ul className='pt-24 space-y-4 p-6'>
@@ -46,7 +48,9 @@ export default function Boost() {
                           delay: 0,
                           duration: 0.8,
                           ease: "easeInOut",
-                        }}className="sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mx-4 sm:mx-10">
+                        }}
+                        viewport={{ once: true }}
+                        className="sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mx-4 sm:mx-10">
                         <div className="bg-[#D9D9D9] relative bg-opacity-5 rounded-3xl border border-neutral-400">
                         <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div>
                             <h3 className="absolute text-3xl font-semibold w-full text-center border-b border-neutral-400 bg-[#D9D9D9] bg-opacity-40 py-4 rounded-3xl">Site performant</h3>

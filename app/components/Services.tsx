@@ -18,6 +18,7 @@ export default function Services() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
+                viewport={{ once: true }}
                 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-center pb-20">Nos services</motion.h2>
 
                 {/* Web Perso */}
@@ -29,6 +30,7 @@ export default function Services() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
+                viewport={{ once: true }}
                 className="flex flex-row justify-between items-center relative h-[300px] lg:h-[600px]">
                     <div className='hidden relative w-5/12 lg:flex justify-center'>
                         <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div> 
@@ -57,7 +59,7 @@ export default function Services() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                
+                viewport={{ once: true }}
                 className="flex flex-row justify-between items-center relative h-[300px] lg:h-[600px]">
                     <div className="flex sm:w-10/12 lg:w-5/12 flex-col space-y-4">
                         <h3 className='font-semibold text-3xl'>Optimisation SEO avancée</h3>
@@ -85,7 +87,7 @@ export default function Services() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                
+                viewport={{ once: true }}
                 className="flex flex-row justify-between items-center relative h-[300px] lg:h-[600px]">
                 <div className='hidden relative w-5/12 lg:flex justify-center'>
                     <div className='absolute inset-0 blur-[8rem] bg-[#61658F] -z-10'></div> 

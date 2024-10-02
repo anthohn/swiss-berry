@@ -14,6 +14,7 @@ export default function Faq() {
                 duration: 1.5,
                 ease: "easeInOut",
             }}
+            viewport={{ once: true }}
             className="flex flex-col space-y-20 my-44 w-11/12 xl:w-9/12 mx-auto"
         >
             <div className='flex flex-col space-y-4'>

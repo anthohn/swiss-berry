@@ -16,6 +16,7 @@ export default function Projects() {
                   duration: 0.8,
                   ease: "easeInOut"
                 }}
+                viewport={{ once: true }}
                 className="text-6xl font-medium leading-tight text-center">Projets</motion.h2>
                 <motion.div
                     initial={{ opacity: 0}}
@@ -25,6 +26,7 @@ export default function Projects() {
                     duration: 0.8,
                     ease: "easeInOut"
                     }}
+                    viewport={{ once: true }}
                     className="flex flex-col space-y-16 xl:space-y-0 xl:flex-row pt-28 items-center xl:justify-center">
                     {projects.map((project, index) => (
                         <ProjectItem 
