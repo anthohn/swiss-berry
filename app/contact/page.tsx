@@ -12,6 +12,7 @@ export default function Contact() {
                 duration: 1.5,
                 ease: "easeInOut",
             }}
+            viewport={{ once: true }}
             className="flex flex-col space-y-10 lg:space-y-0 lg:flex-row space-x-0 lg:space-x-16 w-full md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:w-8/12 mx-auto my-56">
                 <div className="w-full lg:w-1/2 flex flex-col space-y-20  p-4 lg:p-0">
                     <div className="flex flex-wrap justify-center">

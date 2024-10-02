@@ -14,7 +14,8 @@ export default function Landing() {
                       delay: 0.9,
                       duration: 0.8,
                       ease: "easeInOut",
-                    }}            
+                    }}
+                    viewport={{ once: true }}       
                     className="text-4xl md:text-5xl xl:text-6xl font-medium leading-tight">
                         Votre présence en ligne,<br/> sublimée par notre expertise.
                 </motion.h1>
@@ -25,7 +26,8 @@ export default function Landing() {
                       delay: 1.2,
                       duration: 0.8,
                       ease: "easeInOut",
-                    }}    
+                    }}
+                    viewport={{ once: true }}   
                     className="flex flex-col space-y-4 md:flex-row md:space-y-0 justify-center mx-auto md:space-x-6 text-xl items-start"> 
                     <CheckItem>Solution sur mesure</CheckItem>
                     <CheckItem>Hébergement sécurisé</CheckItem>
@@ -38,7 +40,8 @@ export default function Landing() {
                           delay: 1.5,
                           duration: 0.8,
                           ease: "easeInOut",
-                        }}  
+                        }}
+                        viewport={{ once: true }}
                         href='/contact' 
                         className="mx-auto relative p-5 w-fit flex items-center rounded-xl bg-gradient-to-b from-[#3B4297] to-[#131531]">
                         <div className='absolute inset-0 blur-[1rem] z-[-1] bg-[#3B4297]'></div>
