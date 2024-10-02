@@ -42,7 +42,7 @@ export default function Header() {
                     delay: 0.6,
                     duration: 1 }}
             >
-                <div className="mx-auto w-11/12 flex items-center justify-between">
+                <div className="mx-auto flex items-center justify-between  max-w-screen-2xl">
                     {/* Logo */}
                     <a href="/" className="flex-shrink-0">
                         <Image src={LogoSwissBerry} width={150} height={150} alt="logo Swiss Berry" />
