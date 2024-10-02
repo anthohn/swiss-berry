@@ -46,9 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={inter.className}>
-      <body className="flex flex-col">
+      <body>
         <Header />
-        {children}
+        <div className="max-w-screen-2xl mx-auto">
+          {children}
+        </div>
         <Toaster position="top-right" />
         <ContactBtn/>
       </body>
