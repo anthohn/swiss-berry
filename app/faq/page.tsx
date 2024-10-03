@@ -2,7 +2,7 @@
 import { faq } from '@/lib/data';
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import Link from 'next/link'; // Importez Link
+import Link from 'next/link';
 
 export default function Faq() {
     return (
@@ -20,7 +20,7 @@ export default function Faq() {
             <div className='flex flex-col space-y-4'>
                 <h1 className='text-6xl font-medium'>FAQ</h1>
                 <p className='text-neutral-400 text-[18px]'>
-                    Tout ce que vous devez savoir sur nous. Vous ne trouvez pas la réponse que vous cherchez ? 
+                    Tout ce que vous devez savoir sur nous. Vous ne trouvez pas la réponse que vous cherchez ?
                     <Link href="/contact" className="text-blue-500 hover:underline ml-1 trnasition transition-opacity">N&apos;hésitez pas à discuter avec notre équipe.</Link>
                 </p>
             </div>

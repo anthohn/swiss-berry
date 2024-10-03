@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: 'https://swiss-berry.com/contact',
             lastModified: new Date(),
             priority: 0.8,
-        }
+        },
+        {
+            url: 'https://swiss-berry.com/politique-de-confidentialite',
+            lastModified: new Date(),
+            priority: 0.7,
+        },
     ];
 }
