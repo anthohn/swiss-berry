@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
                 <h1 className='text-6xl font-medium'>Politique de confidentialité</h1>
                 <p className='text-neutral-400 text-[18px]'>
                     Tout ce que vous devez savoir sur notre politique de confidentialité. Vous ne trouvez pas la réponse que vous cherchez ?
-                    <Link href="/contact" className="text-blue-500 hover:underline ml-1 transition transition-opacity">N'hésitez pas à discuter avec notre équipe.</Link>
+                    <Link href="/contact" className="text-blue-500 hover:underline ml-1 transition transition-opacity">N&apos;hésitez pas à discuter avec notre équipe.</Link>
                 </p>
                 <p className='text-neutral-400'>Dernière mise à jour : {lastUpdate}</p>
             </div>
