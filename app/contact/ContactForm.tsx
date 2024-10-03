@@ -2,6 +2,7 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import SubmitBtn from "@/app/components/submit-btn";
+import Link from 'next/link';
 
 export default function ContactForm() {
     const [isChecked, setIsChecked] = useState(false);
@@ -28,7 +29,7 @@ export default function ContactForm() {
                 onSubmit={async (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.currentTarget);
-                    
+
                     // Vérifie si la case à cocher est cochée avant d'envoyer le formulaire
                     if (!isChecked) {
                         toast.error("Veuillez accepter les conditions de protection des données.");
@@ -38,7 +39,7 @@ export default function ContactForm() {
                     await handleSubmit(formData);
                 }}
             >
-                <div className='absolute inset-0 blur-[10rem] bg-[#3B4297] bg-opacity-50 -z-10'></div> 
+                <div className='absolute inset-0 blur-[10rem] bg-[#3B4297] bg-opacity-50 -z-10'></div>
                 <div className="flex flex-row justify-between space-x-4">
                     <input
                         className="px-4 h-12 border border-neutral-400 bg-[#EEEEEE] bg-opacity-10 focus:outline-none w-1/2 rounded-xl"
@@ -89,7 +90,7 @@ export default function ContactForm() {
                     placeholder="Information complémentaire (optionnel)"
                     autoComplete="off"
                 />
-                
+
                 {/* Case à cocher pour accepter les conditions */}
                 <div className="flex items-center space-x-2">
                     <input
@@ -97,13 +98,11 @@ export default function ContactForm() {
                         id="dataProtection"
                         checked={isChecked}
                         onChange={() => setIsChecked(!isChecked)} // Inverse l'état de la case
-                        required
                     />
                     <label htmlFor="dataProtection" className="text-[12px]">
-                        Oui, j&apos;ai lu les informations sur la protection des données et j&apos;accepte que mes coordonnées et données soient collectées et stockées électroniquement pour répondre à ma requête.
+                        Oui, j&apos;ai lu les <Link href="/politique-de-confidentialite" className="text-blue-500 hover:underline">informations sur la protection des données</Link> et j&apos;accepte que mes coordonnées et données soient collectées et stockées électroniquement pour répondre à ma requête.
                     </label>
                 </div>
-                
                 <SubmitBtn />
             </form>
         </>

@@ -11,34 +11,34 @@ import Handshake from '@/public/svg/handshake.svg'
 import PartnerExchange from '@/public/svg/partnerExchange.svg'
 
 type Link = {
-    label: string;
-    href: string;
-  };
+  label: string;
+  href: string;
+};
 
 export const links: Link[] = [
-    {
-      label: "FAQ",
-      href: "/faq",
-    },
-    {
-      label: "Contact",
-      href: "/contact",
-    }
-  ] as const;
+  {
+    label: "FAQ",
+    href: "/faq",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  }
+];
 
 interface Project {
-    displayLink: string;
-    urlLink: string;
-    imageSrc: StaticImageData;
-    title: string;
+  displayLink: string;
+  urlLink: string;
+  imageSrc: StaticImageData;
+  title: string;
 }
 
 export const projects: Project[] = [
   {
-      displayLink: 'marius-ollivier.ch',
-      urlLink: 'https://marius-ollivier.ch',
-      imageSrc: MariusOllivier,
-      title: 'Portfolio photographe Marius Ollivier',
+    displayLink: 'marius-ollivier.ch',
+    urlLink: 'https://marius-ollivier.ch',
+    imageSrc: MariusOllivier,
+    title: 'Portfolio photographe Marius Ollivier',
   },
   {
     displayLink: 'humana-services.ch',
@@ -91,5 +91,53 @@ export const faq: Faq[] = [
     answer:
       "Dès notre premier échange, nous mettons vos ambitions au centre de notre stratégie. Vous nous confiez votre vision, et nous la transformons en réalité, pas à pas, jusqu’à ce que vous ayez un site qui vous ressemble et performe à 100 %.",
     icon: PartnerExchange,
+  },
+];
+
+export interface PrivacyPolicySection {
+  section: string;
+  description: string;
+}
+
+export const privacyPolicy: PrivacyPolicySection[] = [
+  {
+    section: "Collecte des données",
+    description:
+      "Nous collectons les informations que vous nous fournissez volontairement via notre formulaire de contact, telles que votre nom, votre adresse e-mail, votre numéro de téléphone et toute autre donnée que vous nous transmettez pour répondre à vos demandes ou établir un devis.",
+  },
+  {
+    section: "Utilisation des données",
+    description:
+      "Les informations que vous nous transmettez sont utilisées uniquement pour répondre à vos demandes, établir un devis ou pour communiquer avec vous concernant les services que nous proposons. Elles ne seront ni vendues, ni partagées sans votre consentement.",
+  },
+  {
+    section: "Partage des données",
+    description:
+      "Vos données ne sont jamais partagées avec des tiers sans votre consentement, sauf dans les cas requis par la loi ou dans le cadre de services techniques nécessaires à la gestion de notre site.",
+  },
+  {
+    section: "Sécurité des données",
+    description:
+      "Nous mettons en œuvre des mesures techniques et organisationnelles pour protéger vos données contre toute perte, utilisation abusive ou accès non autorisé. Vos données sont stockées de manière sécurisée.",
+  },
+  {
+    section: "Durée de conservation",
+    description:
+      "Nous conservons vos données personnelles uniquement pendant la durée nécessaire pour répondre à vos demandes ou pour respecter nos obligations légales.",
+  },
+  {
+    section: "Cookies",
+    description:
+      "Notre site web n'utilise pas de cookies pour collecter ou stocker des informations personnelles. Vous pouvez naviguer librement sans être suivi par des traceurs publicitaires.",
+  },
+  {
+    section: "Vos droits",
+    description:
+      "Conformément à la législation en vigueur, vous disposez des droits suivants : accès, rectification, suppression et opposition au traitement de vos données. Pour exercer ces droits, contactez-nous à l'adresse suivante : contact@swiss-berry.com.",
+  },
+  {
+    section: "Modifications",
+    description:
+      "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute mise à jour sera publiée sur cette page avec une nouvelle date de mise à jour.",
   },
 ];
