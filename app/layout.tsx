@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={inter.className}>
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
         <div className="max-w-screen-2xl mx-auto">
           {children}

@@ -2,9 +2,10 @@
 import { privacyPolicy } from '@/lib/data';
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import Title2 from '../components/Title2';
 
 export default function PrivacyPolicy() {
-    const lastUpdate = "03 octobre 2024"; // Exemple de dernière mise à jour
+    const lastUpdate = "03 octobre 2024"
 
     return (
         <motion.div
@@ -17,10 +18,10 @@ export default function PrivacyPolicy() {
             }}
             viewport={{ once: true }} className="flex flex-col space-y-10 my-44 w-11/12 xl:w-9/12 mx-auto">
             <div className='flex flex-col space-y-4'>
-                <h1 className='text-6xl font-medium'>Politique de confidentialité</h1>
+                <Title2>Politique de confidentialité</Title2>
                 <p className='text-neutral-400 text-[18px]'>
                     Tout ce que vous devez savoir sur notre politique de confidentialité. Vous ne trouvez pas la réponse que vous cherchez ?
-                    <Link href="/contact" className="text-blue-500 hover:underline ml-1 transition transition-opacity">N&apos;hésitez pas à discuter avec notre équipe.</Link>
+                    <Link href="/contact" className="text-blue-500 hover:underline ml-1">N&apos;hésitez pas à discuter avec notre équipe.</Link>
                 </p>
                 <p className='text-neutral-400'>Dernière mise à jour : {lastUpdate}</p>
             </div>
