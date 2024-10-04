@@ -4,6 +4,7 @@ import Header from '@/app/components/Header';
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import ContactBtn from "./components/ContactBtn";
+import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,6 +52,7 @@ export default function RootLayout({
         <div className="max-w-screen-2xl mx-auto">
           {children}
         </div>
+        <Footer />
         <Toaster position="top-right" />
         <ContactBtn/>
       </body>
