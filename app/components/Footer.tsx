@@ -12,7 +12,7 @@ export default function Footer() {
                 <a className="mx-auto" href="https://swiss-berry.com">
                     <Image src={LogoSwissBerry} width={250} height={250} alt="logo Swiss Berry" />
                 </a>
-                <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0  space-x-0 md:space-x-20 mx-auto text-white">
+                <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0  space-x-0 md:space-x-20 mx-auto text-primary-light dark:text-primary-dark">
                     {links.map((link) => (
                     <Link key={link.href} href={link.href} className="hover:text-gray-400">
                         {link.label} 

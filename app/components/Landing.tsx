@@ -16,7 +16,7 @@ export default function Landing() {
                       ease: "easeInOut",
                     }}
                     viewport={{ once: true }}       
-                    className="text-4xl md:text-5xl xl:text-6xl font-medium leading-tight">
+                    className="text-primary-light dark:text-primary-dark text-4xl md:text-5xl xl:text-6xl font-medium leading-tight">
                         Votre présence en ligne,<br/> sublimée par notre expertise.
                 </motion.h1>
                 <motion.ul
@@ -28,7 +28,7 @@ export default function Landing() {
                       ease: "easeInOut",
                     }}
                     viewport={{ once: true }}   
-                    className="flex flex-col space-y-4 md:flex-row md:space-y-0 justify-center mx-auto md:space-x-6 text-xl items-start"> 
+                    className="text-primary-light dark:text-primary-dark flex flex-col space-y-4 md:flex-row md:space-y-0 justify-center mx-auto md:space-x-6 text-xl items-start"> 
                     <CheckItem>Solution sur mesure</CheckItem>
                     <CheckItem>Hébergement sécurisé</CheckItem>
                     <CheckItem>Flexibilité totale</CheckItem>
@@ -44,8 +44,9 @@ export default function Landing() {
                         viewport={{ once: true }}
                         href='/contact' 
                         className="mx-auto relative p-5 w-fit flex items-center rounded-xl bg-gradient-to-b from-[#3B4297] to-[#131531]">
-                        <div className='absolute inset-0 blur-[1rem] z-[-1] bg-[#3B4297]'></div>
-                        <p className="font-medium text-xl z-10">Discutions de votre projet</p>
+                        {/* btn background */}
+                        <div className='absolute inset-0 blur-[1rem] z-[-1] bg-fadebackgroud-light dark:bg-fadebackgroud-dark'></div>
+                        <p className="text-primary-light dark:text-primary-dark font-medium text-xl z-10">Discutions de votre projet</p>
                     </motion.a>
             </section>
         </>

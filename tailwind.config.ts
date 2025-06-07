@@ -9,9 +9,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+        background: { // Couleur de fond 
+          light : "#f0f0f0",
+          dark: "#000000",
+        },
+        fadebackgroud: {  // Couleur de texte primaire
+          light: '#3B4297', 
+          dark: '#3B4297',
+        },
+        primary: {  // Couleur de texte primaire
+          light: '#000000', 
+          dark: '#f0f0f0',
+        },
+        secondary : {  // Couleur de texte secondaire
+          light: '#1F2937',
+          dark: '#9CA3AF',
+        },
+        // button: { // Couleur de fond du bouton
+        //   light: 'from-[#3B4297] to-[#131531]',
+        //   dark: '#3B4297'
+        // },
+        check: { // Couleur de fond du check
+          light: '#26823d',
+          dark: '#26823d',
+        },
+        uncheck: {
+          light: '#d1d5db',
+          dark: '#d1d5db',
+        }
+      }
     },
   },
   plugins: [],
