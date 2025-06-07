@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import ContactBtn from "./components/ContactBtn";
 import Footer from "./components/Footer";
 import { ThemeToggle } from "./theme-toggle";
+import { ThemeProvider } from "next-themes";
 
 
 const inter = Inter({
@@ -65,14 +66,20 @@ export default function RootLayout({
   return (
     <html lang="fr" className={inter.className}>
       <body suppressHydrationWarning={true} className="bg-background-light dark:bg-background-dark">
-        <Header />
-        <div className="max-w-screen-2xl mx-auto">
-          {children}
-        </div>
-        <ThemeToggle />
-        <Footer />
-        <Toaster position="top-right" />
-        <ContactBtn/>
+        <ThemeProvider
+          attribute="class"
+          enableSystem={true}
+          defaultTheme="system"
+        >
+          <Header />
+          <div className="max-w-screen-2xl mx-auto">
+              {children}
+          </div>
+          <ThemeToggle />
+          <Footer />
+          <Toaster position="top-right" />
+          <ContactBtn/>
+        </ThemeProvider>
       </body>
     </html>
   );
