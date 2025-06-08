@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import ContactBtn from "./components/ContactBtn";
 import Footer from "./components/Footer";
-import { ThemeToggle } from "./theme-toggle";
 import { ThemeProvider } from "next-themes";
 
 
@@ -75,7 +74,6 @@ export default function RootLayout({
           <div className="max-w-screen-2xl mx-auto">
               {children}
           </div>
-          <ThemeToggle />
           <Footer />
           <Toaster position="top-right" />
           <ContactBtn/>

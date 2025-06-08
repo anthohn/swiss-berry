@@ -14,7 +14,7 @@ const config: Config = {
           light : "#f0f0f0",
           dark: "#000000",
         },
-        fadebackgroud: {  // Couleur de texte primaire
+        fadebackgroud: { // Couleur de fond ombre
           light: '#3B4297', 
           dark: '#3B4297',
         },

@@ -2,12 +2,14 @@
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
-    
-    const {theme , setTheme} = useTheme();
+    const { theme, setTheme } = useTheme();
     return (
-        <button className="fixed bottom-5 text-primary-light dark:bg-primary-light rounded-full"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-           change theme
+        <button
+            className="text-primary-light dark:text-primary-dark"
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            aria-label="Changer le thème"
+        >
+            {theme === "light" ? "🌙" : "☀️"}
         </button>
-    )
+    );
 }
