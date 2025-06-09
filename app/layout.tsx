@@ -16,12 +16,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://swiss-berry.com'), // Ajoute cette ligne
   title: {
-    default: "Swiss Berry - Développement web sur mesure",
-    template: "%s - Swiss Berry"
+    default: "Swissberry - Développement web sur mesure",
+    template: "%s - Swissberry"
   },
   description: "Chez Swiss Berry, nous sublimons votre présence en ligne avec des solutions web sur mesure, une optimisation SEO avancée, et une maintenance continue. Transformez votre site en une machine à conversions grâce à notre expertise et à des technologies de pointe telles que Next.js.",
   keywords: [
-    "Swiss Berry",
+    "Swissberry",
     "développement web",
     "création de site web",
     "webdesign",
@@ -36,22 +36,22 @@ export const metadata: Metadata = {
     "Vaud",
     "Gland"
   ],
-  authors: [{ name: "Swiss Berry", url: "https://swiss-berry.com" }],
+  authors: [{ name: "Swissberry", url: "https://swiss-berry.com" }],
   openGraph: {
     type: "website",
     url: "https://swiss-berry.com",
-    title: "Swiss Berry - Développement web et SEO",
+    title: "Swissberry - Développement web et SEO",
     description: "Sublimez votre présence en ligne avec des sites performants conçus sur mesure pour attirer et convertir.",
     images: [
       {
         url: "/svg/logo-text-blanc.svg",
-        alt: "Swiss Berry Logo",
+        alt: "Swissberry Logo",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Swiss Berry - Développement web sur mesure",
+    title: "Swissberry - Développement web sur mesure",
     description: "Expertise en développement web, optimisation SEO et maintenance continue pour booster votre activité en ligne.",
     images: ["/svg/logo-text-blanc.svg"],
   },
@@ -63,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={inter.className}>
-      <body suppressHydrationWarning={true} className="bg-background-light dark:bg-background-dark">
+    <html lang="fr" className={inter.className} suppressHydrationWarning>
+      <body className="bg-background-light dark:bg-background-dark">
         <ThemeProvider
           attribute="class"
           enableSystem={true}

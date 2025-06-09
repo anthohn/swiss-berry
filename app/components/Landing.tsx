@@ -33,21 +33,21 @@ export default function Landing() {
                     <CheckItem>Hébergement sécurisé</CheckItem>
                     <CheckItem>Flexibilité totale</CheckItem>
                 </motion.ul>
-                    <motion.a
-                        initial={{ opacity: 0}}
-                        whileInView={{ opacity: 1}}
-                        transition={{
-                          delay: 1.5,
-                          duration: 0.8,
-                          ease: "easeInOut",
-                        }}
-                        viewport={{ once: true }}
-                        href='/contact' 
-                        className="mx-auto relative p-5 w-fit flex items-center rounded-xl bg-gradient-to-b from-[#3B4297] to-[#131531]">
-                        {/* btn background */}
-                        <div className='absolute inset-0 blur-[1rem] z-[-1] bg-fadebackgroud-light dark:bg-fadebackgroud-dark'></div>
-                        <p className="text-primary-light dark:text-primary-dark font-medium text-xl z-10">Discutions de votre projet</p>
-                    </motion.a>
+                <motion.a
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    transition={{
+                        delay: 1.5,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }}
+                    viewport={{ once: true }}
+                    href='/contact' 
+                    className="mx-auto relative p-5 w-fit flex items-center rounded-xl bg-btnBackground-light dark:bg-btnBackground-dark">
+                    {/* btn background */}
+                    <div className='absolute inset-0 blur-[1rem] z-[-1] bg-fadebackgroud-light dark:bg-fadebackgroud-dark'></div>
+                    <p className="text-primary-light dark:text-primary-dark font-semibold text-xl z-10">Discutions de votre projet</p>
+                </motion.a>
             </section>
         </>
     )

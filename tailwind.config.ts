@@ -30,6 +30,10 @@ const config: Config = {
         //   light: 'from-[#3B4297] to-[#131531]',
         //   dark: '#3B4297'
         // },
+        btnBackground: { // Couleur de fond du bouton
+          light: '#3B4297',
+          dark: '#3B4297',
+        },
         check: { // Couleur de fond du check
           light: '#26823d',
           dark: '#26823d',
