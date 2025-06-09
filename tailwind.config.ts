@@ -26,10 +26,6 @@ const config: Config = {
           light: '#1F2937',
           dark: '#9CA3AF',
         },
-        // button: { // Couleur de fond du bouton
-        //   light: 'from-[#3B4297] to-[#131531]',
-        //   dark: '#3B4297'
-        // },
         btnBackground: { // Couleur de fond du bouton
           light: '#3B4297',
           dark: '#3B4297',
