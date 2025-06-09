@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Landing() {
     return(
         <>
-            <section className="flex flex-col space-y-20 mx-auto text-center pt-36 sm:pt-64">
+            <section className="flex flex-col space-y-20 mx-auto text-center pt-36 2xl:pt-64">
                 <motion.h1 
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
