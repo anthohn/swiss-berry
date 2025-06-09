@@ -31,7 +31,7 @@ export default function Faq() {
                         <div className='absolute inset-0 blur-[10rem] bg-[#3B4297] bg-opacity-50 -z-10'></div>
                         <Image src={item.icon} width={45} height={45} alt="Icon" className='mx-auto' />
                         <h2 className='text-xl font-semibold'>{item.question}</h2>
-                        <p className='text-neutral-400'>{item.answer}</p>
+                        <p className='text-neutral-400 text-justify'>{item.answer}</p>
                     </div>
                 ))}
             </div>
