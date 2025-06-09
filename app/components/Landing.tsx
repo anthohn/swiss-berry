@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Landing() {
     return(
         <>
-            <section className="flex flex-col space-y-20 mx-auto text-center pt-36 2xl:pt-64">
+            <section className="flex flex-col space-y-20 mx-auto text-center pt-40 2xl:pt-64">
                 <motion.h1 
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
@@ -16,7 +16,7 @@ export default function Landing() {
                       ease: "easeInOut",
                     }}
                     viewport={{ once: true }}       
-                    className="text-primary-light dark:text-primary-dark text-4xl md:text-5xl xl:text-6xl font-medium leading-tight">
+                    className="text-primary-light dark:text-primary-dark text-4xl md:text-5xl 2xl:text-6xl font-medium leading-tight">
                         Votre présence en ligne,<br/> sublimée par notre expertise.
                 </motion.h1>
                 <motion.ul
