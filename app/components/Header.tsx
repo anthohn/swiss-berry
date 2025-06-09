@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { links } from "@/lib/data";
 import Image from "next/image";
-import LogoSwissBerry from '@/public/svg/logo-text-blanc.svg';
+import LogoSwissBerry from '@/public/svg/logo.svg';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +44,9 @@ export default function Header() {
             >
                 <div className="mx-auto flex items-center justify-between  max-w-screen-2xl">
                     {/* Logo */}
-                    <a href="/" className="flex-shrink-0">
-                        <Image src={LogoSwissBerry} width={150} height={150} alt="logo Swiss Berry" />
+                    <a href="/" className="flex flex-shrink-0 items-center space-x-4">
+                        <Image src={LogoSwissBerry} width={50} height={50} alt="logo Swiss Berry" />
+                        <span className="text-3xl font-bold text-primary-light dark:text-primary-dark">Swissberry</span>
                     </a>
 
                     {/* Hamburger Menu Button for small screens */}
@@ -79,7 +80,7 @@ export default function Header() {
                     <div className="hidden md:flex md:space-x-8">
                         {/* Menu visible en mode bureau */}
                         {links.map((link) => (
-                            <Link key={link.href} href={link.href} className="text-white text-lg font-bold hover:text-gray-400">
+                            <Link key={link.href} href={link.href} className="text-primary-light dark:text-primary-dark text-lg font-bold hover:text-gray-400">
                                 {link.label}
                             </Link>
                         ))}
